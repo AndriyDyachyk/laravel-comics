@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $comics = config('db.comics');
+    $menus = config('navBar.navBarMenu');
+    $shops = config('negozi.shops');
+    $terms = config('terms.terms');
+    $social = config('social.social');
+    return view('home', compact('comics','menus','shops','terms','social'));
+})->name('homepage');

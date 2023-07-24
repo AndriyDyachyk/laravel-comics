@@ -1,1 +1,42 @@
 @import '~bootstrap/scss/bootstrap';
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 60px;
+        }
+
+        ul {
+            li {
+                display: inline-block;
+                padding: 33px 10px;
+                font-size: 13px;
+                font-weight: bold;
+                border-bottom: 4px solid white;
+
+                a {
+                    text-transform: uppercase;
+                    color: black;
+                }
+            }
+
+            &.active {
+                a {
+                    color: rgb(2, 130, 249);
+                }
+
+                border-bottom-color: rgb(2, 130, 249);
+            }
+        }
+    }
+}
