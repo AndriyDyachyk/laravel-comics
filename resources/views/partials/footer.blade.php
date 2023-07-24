@@ -3,7 +3,7 @@
             <div class="container">
             @foreach($shops as $shop)
                 <a href="shop.url" class="shop_card">
-                    <img :src="shop.icon" :alt="shop.name">
+                    <img src="{{ Vite::asset($shop['icon']) }}" alt="{{ $shop['name'] }}">
                     <p>{{ $shop['name']}}</p>
                 </a>
             @endforeach
@@ -22,7 +22,7 @@
                 @endforeach
                 </div>
                 <div class="dc_bg">
-                    <img src="/dc-logo-bg.png" alt="">
+                    <img src="{{ Vite::asset('resources/img/dc-logo-bg.png')}}" alt="">
                 </div>
             </div>
         </section>
@@ -33,7 +33,7 @@
                     <h3>FOLLOW US</h3>
                     @foreach($social as $platform)
                     <a href="platform.url" >
-                        <img src="{{ $platform['icon'] }}" alt="{{ $platform['name'] }}">
+                        <img src="{{ Vite::asset($platform['icon']) }}" alt="{{ $platform['name'] }}">
                     </a>
                     @endforeach
                 </div>
