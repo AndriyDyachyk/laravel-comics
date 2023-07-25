@@ -22,4 +22,12 @@ Route::get('/', function () {
     return view('home', compact('comics','menus','shops','terms','social'));
 })->name('homepage');
 
-
+Route::get('/comics/{comic}', function ($id) {
+    $comics = config('db.comics');
+    $comic = $comics[$id];
+    $menus = config('navBar.navBarMenu');
+    $shops = config('negozi.shops');
+    $terms = config('terms.terms');
+    $social = config('social.social'); 
+    return view('comics.show', compact('comic','menus','shops','terms','social'));
+})->name('comics.show');

@@ -17,9 +17,10 @@
 
 <body>
     @include('partials.header')
-    <main id="home">
+
         @yield('mainpagecontent')
-    </main>
+        @yield('comicpagecontent')
+
     @include('partials.footer')
 </body>
 
