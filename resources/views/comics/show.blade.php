@@ -22,7 +22,7 @@
                             <p>Check Avaiability &#9660;</p>
                         </div>
                     </div>
-                    <p>{{ $comic['description']}}</p>
+                    <p class="description">{{ $comic['description']}}</p>
                 </div>
                 <!-- ad space -->
                 <div class="adv">

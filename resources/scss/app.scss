@@ -353,7 +353,7 @@ footer {
     padding-top: 0px;
 }
 
-#comic .content p {
+.description {
     padding-top: 20px;
 }
 
@@ -367,12 +367,15 @@ footer {
     background-color: rgb(54, 176, 54);
     display: flex;
     align-items: center;
+    padding: 10px 10px;
+
 }
 
 .price {
     width: calc(100% - 250px);
     justify-content: space-between;
     color: lightgreen;
+    border-right: 0.5px solid rgba(128, 128, 128, 0.516);
 }
 
 .availability {
