@@ -1,4 +1,32 @@
 @import '~bootstrap/scss/bootstrap';
+//generals
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 
 //header
 
@@ -8,6 +36,7 @@ header {
     top: 0px;
     left: 0px;
     right: 0px;
+    z-index: 100;
 
     .container {
         display: flex;
@@ -46,7 +75,7 @@ header {
 //fine header
 
 //main
-main {
+#home {
     background-color: rgb(28, 28, 28);
     color: white;
     margin-top: 85px;
@@ -138,6 +167,8 @@ footer {
         p {
             color: white;
             padding-left: 10px;
+            padding-top: 15px;
+            text-transform: uppercase;
         }
     }
 
@@ -166,6 +197,7 @@ footer {
         h4 {
             color: white;
             margin: 15px 0px;
+            text-transform: uppercase;
         }
 
         a {
@@ -183,7 +215,7 @@ footer {
         }
 
         .dc_bg img {
-            transform: translate(0px, -150px);
+            transform: translate(100px, -150px);
         }
     }
 
@@ -216,4 +248,29 @@ footer {
             }
         }
     }
+}
+
+//comics
+
+#comic main {
+    background-color: white;
+}
+
+#comic .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#comic .content {
+    width: 60%;
+}
+
+#comic h3 {
+    color: rgb(0, 44, 86);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#comic .adv {
+    width: 35%;
 }

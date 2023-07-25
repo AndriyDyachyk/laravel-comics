@@ -21,3 +21,5 @@ Route::get('/', function () {
     $social = config('social.social');
     return view('home', compact('comics','menus','shops','terms','social'));
 })->name('homepage');
+
+
