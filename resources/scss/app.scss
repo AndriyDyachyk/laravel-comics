@@ -90,9 +90,13 @@ header {
     background-size: cover;
 }
 
+.main_section {
+    padding: 50px 0px 80px 0px;
+}
+
 .section_label {
     position: relative;
-    top: -20px;
+    top: -70px;
     left: 0px;
     display: inline-block;
 }
@@ -172,10 +176,41 @@ footer {
         }
     }
 
+    #secondaryshops {
+        background-color: rgb(235, 235, 235);
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .shop_card {
+            width: calc(100% / 4);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-left: 1px solid rgb(202, 202, 202);
+            border-right: 1px solid rgb(202, 202, 202);
+        }
+
+        img {
+            max-width: 50px;
+            max-height: 50px;
+            filter: contrast(0);
+        }
+
+        p {
+            color: grey;
+            text-transform: uppercase;
+        }
+    }
+
     #terms_and_conditions {
         height: 350px;
         padding: 20px 0px;
         overflow: hidden;
+
 
         .container {
             display: flex;
@@ -188,6 +223,7 @@ footer {
             flex-wrap: wrap;
             flex-flow: column wrap;
             height: 100%;
+            z-index: 1;
         }
 
         ul {
@@ -212,6 +248,7 @@ footer {
 
         .dc_bg {
             height: 350px;
+            z-index: 0;
         }
 
         .dc_bg img {
@@ -262,15 +299,84 @@ footer {
 }
 
 #comic .content {
-    width: 60%;
+    width: calc(100% - 380px);
 }
 
-#comic h3 {
+#comic h3,
+#other h4 {
     color: rgb(0, 44, 86);
     text-transform: uppercase;
     font-weight: bolder;
+    display: block;
 }
 
 #comic .adv {
-    width: 35%;
+    text-align: right;
+    width: 350px;
+}
+
+#other {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgba(202, 202, 202, 0.669);
+    padding: 10px 0px;
+    padding-bottom: 100px;
+}
+
+.row {
+    display: flex;
+}
+
+.row p {
+    margin-bottom: 0px;
+}
+
+.talent,
+.specs {
+    width: calc(50% - 20px);
+}
+
+.divider {
+    display: flex;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    padding: 10px 0px;
+}
+
+.subtitle {
+    width: 30%;
+}
+
+#comic .divider .content {
+    width: 70%;
+}
+
+#comic .divider .content p {
+    padding-top: 0px;
+}
+
+#comic .content p {
+    padding-top: 20px;
+}
+
+.up_sale {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price,
+.availability {
+    background-color: rgb(54, 176, 54);
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    width: calc(100% - 250px);
+    justify-content: space-between;
+    color: lightgreen;
+}
+
+.availability {
+    width: 250px;
+    justify-content: space-around;
+    color: white;
 }

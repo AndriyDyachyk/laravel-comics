@@ -8,23 +8,18 @@ return[
         "url" => ""
         ],
         [
-        "name" => "dc merchandise",
+        "name" => "shop dc",
         "icon" => "resources/img/buy-comics-merchandise.png",
+        "url" => ""
+        ],
+        [
+        "name" => "comic shop local",
+        "icon" => "resources/img/buy-comics-shop-locator.png",
         "url" => ""
         ],
         [
         "name" => "subscription",
         "icon" => "resources/img/buy-comics-subscriptions.png",
-        "url" => ""
-        ],
-        [
-        "name" => "comci shop local",
-        "icon" => "resources/img/buy-comics-shop-locator.png",
-        "url" => ""
-        ],
-        [
-        "name" => "dc power visa",
-        "icon" => "resources/img/buy-dc-power-visa.svg",
         "url" => ""
         ]
     ]

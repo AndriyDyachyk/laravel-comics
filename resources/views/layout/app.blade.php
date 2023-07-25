@@ -16,12 +16,16 @@
 </head>
 
 <body>
-    @include('partials.header')
+        @include('partials.header')
+
 
         @yield('mainpagecontent')
         @yield('comicpagecontent')
 
-    @include('partials.footer')
+
+    <footer>
+        @include('partials.mainfooter')
+    </footer>
 </body>
 
 </html>
